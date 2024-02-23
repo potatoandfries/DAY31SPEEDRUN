@@ -1,0 +1,4 @@
+<div class="container">
+  <app-shop [shopItems]="CartItem" (NewCart)="add($event)"></app-shop>
+  <app-cart [CartItem]="NewCart" (NewCartItem)="remove($event)"></app-cart>
+</div>
